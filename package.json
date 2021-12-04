@@ -15,6 +15,7 @@
     "sort-packeges": "npx sort-package-json"
   },
   "dependencies": {
+    "antd": "^4.17.2",
     "classnames": "^2.3.1",
     "next": "11.0.1",
     "react": "17.0.2",

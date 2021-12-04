@@ -27,19 +27,10 @@ module.exports = {
   },
   rules: {
     'comma-dangle': 0,
-    'no-magic-numbers': [
-      'warn',
-      {
-        ignore: [1],
-        ignoreArrayIndexes: true,
-        enforceConst: true,
-        detectObjects: true,
-      },
-    ],
     'max-params': ['warn', 3],
     'max-depth': ['error', 4],
     'max-lines': ['warn', 150],
-    'max-lines-per-function': ['warn', 30],
+    'max-lines-per-function': ['warn', 100],
     'array-callback-return': 'warn',
     'block-scoped-var': 'warn',
     'no-else-return': 'warn',

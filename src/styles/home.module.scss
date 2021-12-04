@@ -1,0 +1,11 @@
+.title-wrapper {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h1 {
+    font-size: 45px !important;
+    margin-top: 20px !important;
+  }
+}

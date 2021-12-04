@@ -1,5 +1,8 @@
 import { AppProps, NextWebVitalsMetric } from 'next/app';
+
+import { Layout } from '@components/layout/layout';
 import '../styles/globals.scss';
+import 'antd/dist/antd.css';
 
 export function reportWebVitals(metric: NextWebVitalsMetric) {
   if (process.env.mode === 'perfomance') {
@@ -8,7 +11,11 @@ export function reportWebVitals(metric: NextWebVitalsMetric) {
 }
 
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />;
+  return (
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  );
 }
 
 export default MyApp;
